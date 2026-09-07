@@ -3,12 +3,9 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 /*** 
- * `quotes` array 
+ * these are famous quotes listed in an array of objects. Each object has a `quote` and `source` property, and some objects have an optional `citation` and `year` property.
 ***/
 const quotes = [
   {
@@ -62,12 +59,16 @@ const quotes = [
   }
 ];
 
-console.log(quotes);
 
 /***
- * `getRandomQuote` function
+ * this is a `getRandomQuote` function that generates a random number and returns a random quote object from the `quotes` array.
 ***/
-console.log('test');
+function getRandomQuote() {
+  let randomNumber = Math.floor(Math.random() * quotes.length);
+  return quotes[randomNumber];
+}
+console.log(getRandomQuote());
+
 
 
 /***
