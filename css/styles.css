@@ -163,4 +163,9 @@ h1 {
   .source {
     font-size: 1.25rem;
   }
+
+  .tag {
+    font-weight: bold;
+    margin-left: 10px;
+  }
 }
