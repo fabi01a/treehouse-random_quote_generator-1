@@ -67,15 +67,37 @@ function getRandomQuote() {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
-console.log(getRandomQuote());
-
-
 
 /***
  * `printQuote` function
 ***/
 function printQuote() {
+    /***
+   * the `getRandomQuote` function will be called and stored in this variable 'randomQuote' to be used in the `printQuote` function
+  ***/
+  const randomQuote = getRandomQuote();
+
+  /*** the 'quote' variable will be used to store the HTML string that will be displayed in the `quote-box` div. The HTML string will include the quote and source, and if available, the citation and year.
+  ***/
+  let quote = `
+    <p class="quotes">${randomQuote.quote}</p>
+    <p class="source">${randomQuote.source}
+  `;
+
+  if  (randomQuote.citation) {
+    quote += `<span class="citation">${randomQuote.citation}</span>`;
+  }
+  if (randomQuote.year) {
+    quote += `<span class="year">${randomQuote.year}</span>`;
+  }
+  quote += `</p>`;
+  
+  /*** the 'quote-box' div will be updated with the HTML string stored in the 'quote' variable. ***/
+  document.getElementById('quote-box').innerHTML = quote; 
+  console.log(randomQuote);
 };
+
+
 
 
 /***
