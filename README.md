@@ -1,5 +1,3 @@
-# treehouse-random_quote_generator#1
-
 # Random Quote Generator
 
 ## Project Overview
