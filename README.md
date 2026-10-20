@@ -14,7 +14,7 @@ This project was developed as part of the Treehouse Full Stack JavaScript Techde
 - **CSS3** – Styling and visual presentation
 - **JavaScript (ES6)** – Application logic, randomization, and DOM manipulation
 
-## Demo
+## Video Demo
 
 https://github.com/user-attachments/assets/a2d5e79a-83f0-4236-ae55-21e178595f41
 
